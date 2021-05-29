@@ -1,0 +1,19 @@
+docker run -p 127.0.0.1:3306:3306  --name mariadb-data -e MARIADB_ROOT_PASSWORD=karanTest -d mariadb:latest
+
+
+
+Running and Stopping the Container
+Docker allows us to restart a container with a single command:
+
+docker restart mariadbtest
+The container can also be stopped like this:
+
+docker stop mariadbtest
+
+
+In case we want to destroy a container, perhaps because the image does not suit our needs, we can stop it and then run:
+
+docker rm mariadbtest
+Note that the command above does not destroy the data volume that Docker has created for /var/lib/mysql. If you want to destroy the volume as well, use:
+
+docker rm -v mariadbtest

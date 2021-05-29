@@ -1,0 +1,11 @@
+{
+    "DBHost" : "127.0.0.1",
+    "DBPort" : "3306",
+    "DBProtocol": "tcp",
+    "DBUserName" : "root",
+    "DBPassword" : "karanTest",
+    "TableName": "ingestEvents",
+    "IngestFolderLocation": "/home/karan/projects/netcracker/generateEventData/outputData",
+    "PersistData": true,
+    "ClearDataBeforeRun": true
+}
