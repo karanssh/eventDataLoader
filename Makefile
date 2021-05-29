@@ -29,8 +29,7 @@ initgomod:
 	cd gosrc && go build -o ../${APP_NAME} ${APP_NAME}/cmd
 
 unitest:
-	# no tests yet
-	#cd gosrc && go test ${APP_NAME}
+	cd gosrc && go test -v ${APP_NAME}/ingestion
 	
 
 test: ./protoc ./${APP_NAME} ./unitest
